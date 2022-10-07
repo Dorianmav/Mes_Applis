@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/doria/Apps_et_logiciels/Mon_Application/Ma_liste_V1/app/src/main/res/layout/activity_image.xml" value="0.1796875" />
+        <entry key="..\:/Users/doria/Apps_et_logiciels/Mon_Application/Ma_liste_V1/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/doria/Apps_et_logiciels/Mon_Application/Ma_liste_V1/app/src/main/res/layout/activity_new_collection.xml" value="0.1796875" />
+        <entry key="..\:/Users/doria/Apps_et_logiciels/Mon_Application/Ma_liste_V1/app/src/main/res/layout/activity_new_resume.xml" value="0.14764492753623187" />
+        <entry key="..\:/Users/doria/Apps_et_logiciels/Mon_Application/Ma_liste_V1/app/src/main/res/layout/activity_test.xml" value="0.1796875" />
+        <entry key="..\:/Users/doria/Apps_et_logiciels/Mon_Application/Ma_liste_V1/app/src/main/res/layout/custom_row_view.xml" value="0.4466666666666667" />
+        <entry key="..\:/Users/doria/Apps_et_logiciels/Mon_Application/Ma_liste_V1/app/src/main/res/layout/fragment_achats.xml" value="0.18199608610567514" />
+        <entry key="..\:/Users/doria/Apps_et_logiciels/Mon_Application/Ma_liste_V1/app/src/main/res/layout/fragment_animes.xml" value="0.1796875" />
+        <entry key="..\:/Users/doria/Apps_et_logiciels/Mon_Application/Ma_liste_V1/app/src/main/res/layout/fragment_mangas.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/doria/Apps_et_logiciels/Mon_Application/Ma_liste_V1/app/src/main/res/layout/fragment_new_collection.xml" value="0.22" />
+        <entry key="..\:/Users/doria/Apps_et_logiciels/Mon_Application/Ma_liste_V1/app/src/main/res/layout/fragment_scans.xml" value="0.1796875" />
+        <entry key="..\:/Users/doria/Apps_et_logiciels/Mon_Application/Ma_liste_V1/app/src/main/res/layout/list_item_layout.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/doria/Apps_et_logiciels/Mon_Application/Ma_liste_V1/app/src/main/res/layout/list_item_manga_layout.xml" value="0.25" />
+        <entry key="..\:/Users/doria/Apps_et_logiciels/Mon_Application/Ma_liste_V1/app/src/main/res/layout/list_item_scan_layout.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/doria/Apps_et_logiciels/Mon_Application/Ma_liste_V1/app/src/main/res/layout/message_layout.xml" value="0.1796875" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

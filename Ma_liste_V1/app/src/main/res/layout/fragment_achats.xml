@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".fragments.Achats">
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/entree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Achat à ajouter"
+                android:inputType="text"
+                android:minHeight="48dp"/>
+
+            <EditText
+                android:id="@+id/qte"
+                android:layout_width="84dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:layout_marginEnd="1dp"
+                android:ems="10"
+                android:inputType="numberSigned"
+                android:minHeight="48dp"
+                android:text="1" />
+
+            <Button
+                android:id="@+id/ajout"
+                android:layout_width="114dp"
+                android:layout_height="48dp"
+                android:layout_marginEnd="0dp"
+                android:text="Ajouter" />
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/list_achat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:numColumns="2" />
+
+    </LinearLayout>
+
+    <!--à mettre en fond et faire disparaitre quand la liste se remplit-->
+    <!--<TextView
+        android:id="@+id/titre"
+        android:hint="Achats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textSize="32dp" />-->
