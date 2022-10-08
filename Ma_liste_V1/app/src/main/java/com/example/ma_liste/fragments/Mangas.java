@@ -32,8 +32,8 @@ import android.widget.Toast;
 import com.example.ma_liste.adapters.CustomListMangaAdapter;
 import com.example.ma_liste.Class.Manga;
 import com.example.ma_liste.R;
-import com.example.ma_liste.new_collection;
-import com.example.ma_liste.new_resume;
+import com.example.ma_liste.activity.new_collection;
+import com.example.ma_liste.activity.new_resume;
 
 import java.io.IOException;
 import java.util.ArrayList;

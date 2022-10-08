@@ -1,10 +1,11 @@
-package com.example.ma_liste;
+package com.example.ma_liste.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager2.widget.ViewPager2;
 
 import android.os.Bundle;
 
+import com.example.ma_liste.R;
 import com.example.ma_liste.adapters.PageAdapter;
 import com.google.android.material.tabs.TabLayout;
 

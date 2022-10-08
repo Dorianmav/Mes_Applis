@@ -1,4 +1,4 @@
-package com.example.ma_liste;
+package com.example.ma_liste.activity;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -9,6 +9,8 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.ma_liste.R;
 
 public class new_resume extends AppCompatActivity {
 
