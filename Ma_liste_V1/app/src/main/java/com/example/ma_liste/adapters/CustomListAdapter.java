@@ -1,12 +1,14 @@
-package com.example.ma_liste;
+package com.example.ma_liste.adapters;
 
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
-import android.widget.EditText;
 import android.widget.TextView;
+
+import com.example.ma_liste.Class.Produit;
+import com.example.ma_liste.R;
 
 import java.util.List;
 

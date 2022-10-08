@@ -3,19 +3,18 @@ package com.example.ma_liste.fragments;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
-import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import com.example.ma_liste.adapters.CustomListScanAdapter;
 import com.example.ma_liste.R;
-import com.example.ma_liste.Scan;
+import com.example.ma_liste.Class.Scan;
 
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -41,23 +40,21 @@ public class Scans extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_scans, container, false);
 
-        //On instancie la liste
-        ArrayList<String> listeDesScans = new ArrayList<String>();
-
         //< avoir les éléments >
         entree = view.findViewById(R.id.entree);
         lien = view.findViewById(R.id.lien_to_scans);
         chapitre = view.findViewById(R.id.chapitre);
-        RecyclerView liste = view.findViewById(R.id.list_scans);
+        ListView liste = view.findViewById(R.id.list_scans);
         Button ajout = view.findViewById(R.id.ajout);
         //</ avoir les éléments >
 
         //On instancie la liste
         list = new ArrayList<Scan>();
 
-        //On instancie l'adapter et on l'ajoute à la liste view
-        ArrayAdapter<String> custom = new ArrayAdapter<String>(getContext().getApplicationContext(), android.R.layout.simple_expandable_list_item_1, listeDesScans);
-        //liste.setAdapter(custom);
+        //On instancie l'adapter et on l'ajoute à la recycler view
+        CustomListScanAdapter custom = new CustomListScanAdapter(getContext(),list);
+        liste.setAdapter(custom);
+
 
         ajout.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -91,4 +88,6 @@ public class Scans extends Fragment {
 
         return view;
     }
+
+
 }

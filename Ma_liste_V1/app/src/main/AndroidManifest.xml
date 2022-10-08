@@ -15,12 +15,6 @@
         android:theme="@style/Theme.Ma_liste"
         android:usesCleartextTraffic="true">
         <activity
-            android:name=".test"
-            android:exported="false" />
-        <activity
-            android:name=".image"
-            android:exported="false" />
-        <activity
             android:name=".new_collection"
             android:exported="false" />
         <activity

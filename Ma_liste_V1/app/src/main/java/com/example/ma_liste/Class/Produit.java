@@ -1,4 +1,4 @@
-package com.example.ma_liste;
+package com.example.ma_liste.Class;
 
 public class Produit {
     private String nom;

@@ -1,4 +1,4 @@
-package com.example.ma_liste;
+package com.example.ma_liste.Class;
 
 import android.net.Uri;
 
@@ -25,6 +25,10 @@ public class Scan {
 
     public URL getLien() {
         return lien;
+    }
+
+    public String getSLien(){
+        return lien.toString();
     }
 
     public void setLien(URL lien) {

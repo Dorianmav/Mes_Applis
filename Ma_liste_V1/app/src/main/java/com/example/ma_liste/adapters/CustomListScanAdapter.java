@@ -1,12 +1,14 @@
-package com.example.ma_liste;
+package com.example.ma_liste.adapters;
 
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
-import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.example.ma_liste.R;
+import com.example.ma_liste.Class.Scan;
 
 import java.util.List;
 
@@ -34,7 +36,26 @@ public class CustomListScanAdapter extends BaseAdapter {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         ViewHolder holder;
-        return null;
+
+        if (convertView == null) {
+            convertView = layoutInflater.inflate(R.layout.list_item_scan_layout, null);
+            holder = new CustomListScanAdapter.ViewHolder();
+            holder.titreV = (TextView) convertView.findViewById(R.id.titre);
+            holder.chaitreV = (TextView) convertView.findViewById(R.id.chapitre);
+            //holder.lienV = (TextView) convertView.findViewById(R.id.lien_scan);
+
+            convertView.setTag(holder);
+
+        } else {
+            holder = (CustomListScanAdapter.ViewHolder) convertView.getTag();
+        }
+
+        Scan scan = this.listeScan.get(position);
+        holder.titreV.setText(scan.getTitre());
+        holder.chaitreV.setText(scan.getChapitre());
+        //holder.lienV.setText(scan.getSLien());
+
+        return convertView;
     }
 
     static class ViewHolder {
@@ -42,4 +63,6 @@ public class CustomListScanAdapter extends BaseAdapter {
         TextView chaitreV;
         TextView lienV;
     }
+
+
 }

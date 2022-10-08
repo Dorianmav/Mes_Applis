@@ -1,4 +1,4 @@
-package com.example.ma_liste;
+package com.example.ma_liste.Class;
 
 import android.graphics.Bitmap;
 import android.net.Uri;

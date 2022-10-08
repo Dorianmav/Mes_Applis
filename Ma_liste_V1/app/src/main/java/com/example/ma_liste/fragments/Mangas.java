@@ -1,21 +1,14 @@
 package com.example.ma_liste.fragments;
 
-import static android.app.Activity.RESULT_OK;
-import static android.provider.MediaStore.ACTION_PICK_IMAGES;
-
 import android.annotation.SuppressLint;
-import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.database.Cursor;
 import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.Bundle;
 
-import androidx.activity.result.ActivityResult;
 import androidx.activity.result.ActivityResultCallback;
 import androidx.activity.result.ActivityResultLauncher;
 import androidx.activity.result.contract.ActivityResultContract;
@@ -36,12 +29,11 @@ import android.widget.ListView;
 import android.widget.Switch;
 import android.widget.Toast;
 
-import com.example.ma_liste.CustomListMangaAdapter;
-import com.example.ma_liste.Manga;
+import com.example.ma_liste.adapters.CustomListMangaAdapter;
+import com.example.ma_liste.Class.Manga;
 import com.example.ma_liste.R;
 import com.example.ma_liste.new_collection;
 import com.example.ma_liste.new_resume;
-import com.example.ma_liste.test;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -96,6 +88,8 @@ public class Mangas extends Fragment {
 
         //Créer un adapter qui va gerer l'affichage de mes items dans la liste
         CustomListMangaAdapter custom = new CustomListMangaAdapter(getContext(),list);
+
+
 
         //On l'ajoute à la listview
         liste.setAdapter(custom);

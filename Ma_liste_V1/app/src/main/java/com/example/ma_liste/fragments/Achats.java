@@ -1,42 +1,26 @@
 package com.example.ma_liste.fragments;
 
 import android.app.AlertDialog;
-import android.app.Application;
 import android.app.ProgressDialog;
-import android.content.Context;
 import android.content.DialogInterface;
-import android.database.MatrixCursor;
-import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
-import android.widget.SimpleAdapter;
-import android.widget.TextView;
 import android.widget.Toast;
 
-import androidx.cursoradapter.widget.SimpleCursorAdapter;
 import androidx.fragment.app.Fragment;
-import androidx.viewpager2.widget.ViewPager2;
 
-import com.example.ma_liste.CustomListAdapter;
+import com.example.ma_liste.adapters.CustomListAdapter;
 //import com.example.ma_liste.JSONParser;
-import com.example.ma_liste.MainActivity;
-import com.example.ma_liste.Produit;
+import com.example.ma_liste.Class.Produit;
 import com.example.ma_liste.R;
-import com.google.android.material.navigation.NavigationBarView;
 
-import org.json.JSONException;
-import org.json.JSONObject;
-
-import java.text.DecimalFormat;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 
 public class Achats extends Fragment {
