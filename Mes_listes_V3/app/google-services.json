@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "597818840694",
+    "project_id": "mes-listes-394c4",
+    "storage_bucket": "mes-listes-394c4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:597818840694:android:44789f5cae6e34a3bf3157",
+        "android_client_info": {
+          "package_name": "com.example.meslistes"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "597818840694-trho5jmo6sch1pcr6gr92p7nqu82s07e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA2V12GBlF_Sic8b-b8SlFkRfp-p987UFo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "597818840694-trho5jmo6sch1pcr6gr92p7nqu82s07e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

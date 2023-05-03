@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activitys.AchatActivity">
+
+    <TextView
+        android:id="@+id/titre"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:background="@drawable/bordure_rouge_2"
+        android:layout_marginTop="42dp"
+        android:text="Ma liste de courses"
+        android:textColor="@color/black"
+        android:gravity="center_horizontal|center_vertical"
+        android:textSize="28sp" />
+
+
+    <ImageButton
+        android:id="@+id/ajout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/titre"
+        android:layout_alignBottom="@+id/titre"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp"
+        android:layout_toEndOf="@+id/titre"
+        android:background="#01000000"
+        android:src="@drawable/ic_baseline_add_shopping_cart_24"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titre">
+
+        <EditText
+            android:id="@+id/nom"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:hint="nom du produit"
+            />
+
+        <EditText
+            android:id="@+id/qte"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/nom"
+            android:layout_alignParentEnd="true"
+            android:inputType="numberSigned"
+            android:text="1"
+            />
+    </RelativeLayout>
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/rl"
+        android:layout_marginTop="20dp"
+        android:id="@+id/recvAchat"/>
+
+</RelativeLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item_card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="30dp"
+    app:cardCornerRadius="20dp"
+    android:layout_marginHorizontal="14dp"
+    android:layout_marginVertical="8dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/achat_item_nom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:padding="8dp"
+            android:hint="nom"
+            android:layout_marginStart="8dp"/>
+
+        <TextView
+            android:id="@+id/achat_item_qte"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:padding="8dp"
+            android:hint="quantité"
+            android:layout_marginRight="8dp"
+            android:layout_toRightOf="@+id/achat_item_nom"/>
+
+        <CheckBox
+            android:id="@+id/achat_item_checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/achat_item_qte"
+            android:minHeight="48dp"/>
+
+
+        <ImageButton
+            android:id="@+id/achat_item_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignTop="@+id/achat_item_qte"
+            android:layout_marginVertical="15dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginBottom="0dp"
+            android:layout_toEndOf="@+id/achat_item_checkBox"
+            android:src="@drawable/ic_baseline_delete_24" />
+
+
+    </RelativeLayout>
+
+
+
+
+</androidx.cardview.widget.CardView>

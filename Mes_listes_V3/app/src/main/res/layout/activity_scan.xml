@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/acceuiScan"
+    tools:context=".activitys.ScanActivity">
+
+    <TextView
+        android:id="@+id/titre"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:background="@drawable/bordure_rouge_2"
+        android:layout_marginTop="15dp"
+        android:text="Liste des scans"
+        android:textColor="@color/black"
+        android:gravity="center_horizontal|center_vertical"
+        android:textSize="28sp" />
+
+    <ImageButton
+        android:id="@+id/ajout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/titre"
+        android:layout_alignBottom="@+id/titre"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp"
+        android:layout_toEndOf="@+id/titre"
+        android:background="#01000000"
+        android:src="@drawable/ic_baseline_note_add_24"
+        tools:ignore="SpeakableTextPresentCheck"
+        android:onClick="onSlideFormulaire"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/titre"
+        android:gravity="clip_horizontal"
+        android:layout_marginTop="10dp"
+        android:padding="20dp"
+        android:background="@drawable/bordure_lavende"
+        android:id="@+id/ajoutScanform">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:background="@drawable/bordure_lavende">
+
+            <EditText
+                android:id="@+id/scan_titre"
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:layout_gravity="start|center_vertical"
+                android:background="@drawable/bordure_lavende_2"
+                android:padding="16dp"
+                android:hint="Titre"/>
+
+            <EditText
+                android:id="@+id/chapitre"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@drawable/bordure_lavende_3"
+                android:padding="16dp"
+                android:text="1"/>
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/site"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="start|center_vertical"
+            android:background="@drawable/bordure_lavende"
+            android:padding="16dp"
+            android:hint="Site internet"/>
+
+        <EditText
+            android:id="@+id/site_chapitre"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="start|center_vertical"
+            android:background="@drawable/bordure_lavende"
+            android:padding="16dp"
+            android:hint="Site acces au chapitre"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <Switch
+                android:id="@+id/statut"
+                android:layout_width="134dp"
+                android:layout_height="50dp"
+                android:background="@drawable/bordure_lavende_2"
+                android:padding="16dp"
+                android:showText="true"
+                android:text="statut"
+                android:textOff="EC"
+                android:textOn="fini"
+                tools:ignore="UseSwitchCompatOrMaterialXml,TouchTargetSizeCheck" />
+
+            <Button
+                android:id="@+id/ajoutscan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|center_vertical"
+                android:background="@drawable/bordure_lavende_3"
+                android:text="Ajouter"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/scan_seach"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ajoutScanform"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginStart="12dp"
+        app:iconifiedByDefault="false"
+        app:searchHintIcon="@null"
+        app:queryHint="Rechercher..."
+        android:focusable="false"
+        app:closeIcon="@drawable/ic_baseline_clear_24"
+        app:searchIcon="@drawable/ic_baseline_search_24"
+        android:background="@drawable/search_bkg"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recvScan"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/scan_seach"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        app:backgroundTint="@color/colorAccent"
+        app:fabSize="normal"
+        app:srcCompat="@drawable/ic_menu"
+        app:tint="@color/colorWhite" />
+
+   <!-- <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/mode_ligne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_view_headline_24"
+        app:backgroundTint="@color/colorAccent"
+        app:fabSize="mini"
+        android:layout_alignRight="@+id/mode_grille"
+        android:layout_above="@+id/mode_grille"
+        app:tint="@color/colorWhite"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/mode_grille"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_grid_view_24"
+        app:backgroundTint="@color/colorAccent"
+        app:fabSize="mini"
+        android:layout_above="@+id/fab"
+        app:tint="@color/colorWhite"
+        android:layout_alignRight="@+id/fab"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="5dp"/>-->
+
+</RelativeLayout>
